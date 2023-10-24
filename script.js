@@ -79,6 +79,8 @@ document.querySelector(".check").addEventListener("click", function () {
       message.textContent = "🤷‍♂️ You lost the game!";
       //score html lo select chese dane zero chestam
       document.querySelector(".score").textContent = "0";
+      //question mark place lo mana secret number ne display chestam
+      document.querySelector(".number").textContent = secretNumber;
     }
   }
   //if guess is less than secrenumber
