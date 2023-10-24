@@ -10,6 +10,18 @@ let secretNumber = Math.floor(Math.random() * 20) + 1;
 let score = 20;
 let highScore = 0;
 
+//okavela game already adivunte highScore ni update chestam
+if(sessionStorage.getItem("highScore") != null){
+  highScore = sessionStorage.getItem("highScore");
+  document.querySelector(".highscore").textContent = highScore;
+}
+else
+{
+  //lekapothe highScore ni initialize chestam
+  sessionStorage.setItem("highScore",0);
+}
+
+
 function wrongAnswer() {
   let active = document.querySelector("body");
   active.classList.add("wrong-answer"),
@@ -46,6 +58,8 @@ document.querySelector(".check").addEventListener("click", function () {
     if (score > highScore) {
       highScore = score;
       document.querySelector(".highscore").textContent = highScore;
+      //save chesina highScore ni kuda update chestam
+      sessionStorage.setItem("highScore",highScore);
     }
   }
   //if guess greater than secret number
