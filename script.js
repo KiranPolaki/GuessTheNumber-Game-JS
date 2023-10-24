@@ -65,6 +65,9 @@ document.querySelector(".check").addEventListener("click", function () {
       //save chesina highScore ni kuda update chestam
       sessionStorage.setItem("highScore",highScore);
     }
+   
+    //number ni guess chesesthe  event listener ni remove chesestham
+    document.querySelector(".check").removeEventListener('click',(event)=>{});
   }
   //if guess greater than secret number
   else if (guess > secretNumber) {
