@@ -80,6 +80,6 @@ Thanks to all the contributors:
 
 <br/>
 
-<a href="https://github.com/Shariar-Hasan/QuoteVerse/graphs/contributors">
+<a href="https://github.com/KiranPolaki/GuessTheNumber/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=KiranPolaki/GuessTheNumber" />
 </a>

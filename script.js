@@ -10,6 +10,18 @@ let secretNumber = Math.floor(Math.random() * 20) + 1;
 let score = 20;
 let highScore = 0;
 
+//okavela game already adivunte highScore ni update chestam
+if(sessionStorage.getItem("highScore") != null){
+  highScore = sessionStorage.getItem("highScore");
+  document.querySelector(".highscore").textContent = highScore;
+}
+else
+{
+  //lekapothe highScore ni initialize chestam
+  sessionStorage.setItem("highScore",0);
+}
+
+
 function wrongAnswer() {
   let active = document.querySelector("body");
   active.classList.add("wrong-answer"),
@@ -23,6 +35,10 @@ document.querySelector(".check").addEventListener("click", function () {
   const guess = Number(document.querySelector(".guess").value);
   // em em aytey change chestamo vatne store cheskuntamu
   let message = document.querySelector(".message");
+
+  // Added Sound Effect to button click
+  let audio = new Audio("sounds/button-click.mp3");
+  audio.play();
 
   if (score == 1) {
     document.querySelector("body").style.backgroundColor = "darkred";
@@ -46,6 +62,8 @@ document.querySelector(".check").addEventListener("click", function () {
     if (score > highScore) {
       highScore = score;
       document.querySelector(".highscore").textContent = highScore;
+      //save chesina highScore ni kuda update chestam
+      sessionStorage.setItem("highScore",highScore);
     }
 
     document.querySelector(".check").removeEventListener('click',(event)=>{})
@@ -67,6 +85,8 @@ document.querySelector(".check").addEventListener("click", function () {
       message.textContent = "🤷‍♂️ You lost the game!";
       //score html lo select chese dane zero chestam
       document.querySelector(".score").textContent = "0";
+      //question mark place lo mana secret number ne display chestam
+      document.querySelector(".number").textContent = secretNumber;
     }
   }
   //if guess is less than secrenumber
