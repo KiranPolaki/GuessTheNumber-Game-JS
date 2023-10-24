@@ -24,6 +24,10 @@ document.querySelector(".check").addEventListener("click", function () {
   // em em aytey change chestamo vatne store cheskuntamu
   let message = document.querySelector(".message");
 
+  // Added Sound Effect to button click
+  let audio = new Audio("sounds/button-click.mp3");
+  audio.play();
+
   if (score == 1) {
     document.querySelector("body").style.backgroundColor = "darkred";
   }
