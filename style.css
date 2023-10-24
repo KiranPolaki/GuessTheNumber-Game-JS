@@ -70,7 +70,7 @@ h1 {
 }
 
 .between {
-  font-size: 1.4rem;
+  font-size: 1.8rem; /* Made font-size bigger so number range is more obvious to the user */
   position: absolute;
   top: 2rem;
   right: 2rem;
