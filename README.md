@@ -28,7 +28,6 @@
 - [Preview](#preview)
 - [Getting Started](#getting-started)
 - [How to Contribute](#how-to-contribute)
-  - [Add Quote](#add-quote)
 - [License](#license)
 - [Contributor List](#contributor-list)
 
