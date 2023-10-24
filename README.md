@@ -1,6 +1,6 @@
 <div align="center">
 <h1>GuessTheNumber</h1>
-<img src="">
+<img src="/images/Helping people learn Web and DSA.png">
 </div>
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/Shariar-Hasan/QuoteVerse)
@@ -34,7 +34,7 @@
 
 ## 🗒️Features
 
-- **Random Quote Generation:** Click `Generate Quote` button and get a new quote every time.
+- **Guess The Number game:** Click `Play` button and get a new quote every time.
 - **Categories:** Choose from various categories such as Life, Motivation, Friendship, and more.
 - **Author Information:** Each quote includes the name of the author who said it.
 - **Contributor Information:** Each quote includes the name of the contributor who added the it.
