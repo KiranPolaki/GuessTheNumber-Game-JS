@@ -122,3 +122,43 @@ h1 {
 .wrong-answer {
   background-color: #b22222;
 }
+
+@media screen and (max-width: 400px) {
+  h1 {
+    font-size: 3rem;
+  }
+  .btn {
+    font-size: 1.5rem;
+    padding: 2rem;
+    left: 10px;
+  }
+  .between {
+    font-size: 1.2rem;
+    top: 4rem;
+    right: 0px;
+  }
+  .left {
+    /* width: 52rem; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .right {
+    /* width: 52rem; */
+    font-size: 2rem;
+    text-align: center;
+  }
+  .guess {
+    width: 13rem;
+    padding: 2rem 0rem;
+    margin-bottom: 2rem;
+  }
+  .message {
+    margin-bottom: 3rem;
+    height: 5rem;
+  }
+  .label-score {
+    margin-bottom: 3rem;
+  }
+}
