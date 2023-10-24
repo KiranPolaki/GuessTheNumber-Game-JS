@@ -88,6 +88,7 @@ document.querySelector(".again").addEventListener("click", function () {
   //secret number lo malli random number generate chestam
   secretNumber = Math.floor(Math.random() * 20) + 1;
   let number = document.querySelector(".number");
+  score = 20
   //input field ne null chesam antey value remove chesam
   document.querySelector(".guess").value = null;
   //aa box ke malli question mark petam correct answer undede
