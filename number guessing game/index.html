@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!-- Number Guessing Game HTML -->
+<html>
+	<head>
+		<title>JavaScript Number Guess</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1 user-scalable=no">
+		<script src="num.js"></script>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<!-- TODO let the user submit a guess by pressing return -->
+		<!-- TODO hide and show history area as needed -->
+	</head>
+	<body>
+		<div id="game">
+			<h1>Number Guessing Game</h1>
+			<div id="statusArea">
+				<p>Enter a number between 1-100 and click the button...</p>
+			</div>
+			<input type="number" id="userGuess"/>
+			<div id="buttonArea" class="button">
+				Guess
+			</div>
+			<div id="historyArea">
+				<h2>Your Previous Guesses</h2>
+				<ol id="historyList">
+				</ol>
+			</div>
+			
+		</div>
+	</body>
+</html>
