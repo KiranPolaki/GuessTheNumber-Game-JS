@@ -122,3 +122,13 @@ document.querySelector(".again").addEventListener("click", function () {
   // akada text marustam malli guess cheyandi ane
   document.querySelector(".message").textContent = "start guessing...";
 });
+
+//Added functionality to enable user to use enter key to guess the number
+const input = document.getElementById("input");
+
+input.addEventListener("keypress", function(event) {
+  if (event.key === "Enter") {
+    event.preventDefault();
+    document.getElementById("check").click();
+  }
+})
