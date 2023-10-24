@@ -1,20 +1,20 @@
 <div align="center">
-<h1>GuessTheNumber</h1>
+<h1>Guess My Number</h1>
 <img src="/images/Helping people learn Web and DSA.png">
 </div>
 
-![GitHub repo size](https://img.shields.io/github/repo-size/Shariar-Hasan/QuoteVerse)
-![GitHub last commit](https://img.shields.io/github/last-commit/Shariar-Hasan/QuoteVerse)
-![GitHub issues](https://img.shields.io/github/issues/Shariar-Hasan/QuoteVerse)
-![GitHub pull requests](https://img.shields.io/github/issues-pr/Shariar-Hasan/QuoteVerse)
-![GitHub contributors](https://img.shields.io/github/contributors/Shariar-Hasan/QuoteVerse)
-![GitHub stars](https://img.shields.io/github/stars/Shariar-Hasan/QuoteVerse?style=social)
-![GitHub forks](https://img.shields.io/github/forks/Shariar-Hasan/QuoteVerse?style=social)
+![GitHub repo size](https://img.shields.io/github/repo-size/KiranPolaki/GuessTheNumber)
+![GitHub last commit](https://img.shields.io/github/last-commit/KiranPolaki/GuessTheNumber)
+![GitHub issues](https://img.shields.io/github/issues/KiranPolaki/GuessTheNumber)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/KiranPolaki/GuessTheNumber)
+![GitHub contributors](https://img.shields.io/github/contributors/KiranPolaki/GuessTheNumber)
+![GitHub stars](https://img.shields.io/github/stars/KiranPolaki/GuessTheNumber?style=social)
+![GitHub forks](https://img.shields.io/github/forks/KiranPolaki/GuessTheNumber?style=social)
 
 
 <h3>Note : This Repository is under Hacktoberfest 2023 💥🥳🙌🏼🥂</h3>
 
-<p>Guess the number is a simple web application that you have to play and get the high score if you can. This open-source project aims to spread positivity though games.</p>
+<p>Guess my number is a simple web application that you can play which generate the random number you have to guess it. This open-source project aims to spread positivity though games.</p>
 
 ### 🔴 For `hactoberfest` you have to STAR The Repository⭐, Open a PULL REQUEST & Get it Merged! 🎉
 
@@ -34,33 +34,36 @@
 
 ## 🗒️Features
 
-- **Guess The Number game:** Click `Play` button and get a new quote every time.
-- **Categories:** Choose from various categories such as Life, Motivation, Friendship, and more.
-- **Author Information:** Each quote includes the name of the author who said it.
-- **Contributor Information:** Each quote includes the name of the contributor who added the it.
-- **Open for Contributions:** This project is open for contributions. Feel free to add new quotes and categories to enrich the collection.
+- **Guess My Number game:** Enter any number in the box and click `Check!` button and get and you will be guided depending on your number is correct or not.
+- **Score:** Score will be decreased for every wrong guess so be carefull.
+- **High Score:** Once you guess the correct number before your current high score this will also be updated.
+- **Open for Contributions:** This project is open for contributions. Feel free to add any suggested features and if you are new to contributions i encourage you to work on the readme file or add your name in the NewContributors file(format of what to fo will be provided below).
 - **Cool UI:** This project has a eye catching UI, with some interactive component. If you have better idea, you are open to contribute on UI features. See [How to Contibute](#🧩how-to-contribute) to this repository.
-- **Own Cdn:** This Project Provides Cdn for all the Quotes added.
+- **Own Cdn:** For new contributors i really appreciate you taking your time and reading this and all the best starting your journey all you have to do is. find the newContributor.html file and there you have to add this code snippet given below. Make sure to edit it🤣 with yoru name and intrests.
+- 
   ```
-  <script src="https://cdn.jsdelivr.net/gh/Shariar-Hasan/QuoteVerse/Quotes.js"></script>
+  <h2 class="name">Name: {your-name}</h2>
+  <p class="intrests-field">Interested Field: {Web-developent/Ai/Machine-Learning/cloud-computing/salesforce}</p>
+  <p class="college">College: {college-name}</p>
+  <p class="dream">Dream: {i want to get the one piece🤣}</p>
   ```
-  use this to get you apps global quotes.
+  use this to get started .
 
 ### `Star` the repository, if you found it helpful/wonderfull.
 
 ## 🗒️Getting Started
 
-To get started with Quoteverse, You can use QuoteVerse from [Live Site](https://shariar-hasan.github.io/QuoteVerse/) or follow these steps:
+To get started with GuessMyNumber, You can use GuessMyNumber from [Live Site](https://kiranpolaki.github.io/GuessTheNumber/) or follow these steps:
 
 1. **Clone the Repository:**
 
    ```sh
-   git clone https://github.com/Shariar-Hasan/QuoteVerse.git
-   cd QuoteVerse
+   git clone https://github.com/KiranPolaki/GuessTheNumber.git
+   cd GuessTheNumber
    ```
 
 2. **Open `index.html` in Your Browser:**
-   Simply open the `index.html` file in your preferred web browser to start using Quoteverse.
+   Simply open the `index.html` file in your preferred web browser to start using GuessMyNumber.
 
 ## 🧩How to Contribute
 
@@ -79,5 +82,5 @@ Thanks to all the contributors:
 <br/>
 
 <a href="https://github.com/Shariar-Hasan/QuoteVerse/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=Shariar-Hasan/QuoteVerse" />
+  <img src="https://contrib.rocks/image?repo=KiranPolaki/GuessTheNumber" />
 </a>
