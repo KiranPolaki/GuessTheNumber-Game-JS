@@ -66,7 +66,7 @@ document.querySelector(".check").addEventListener("click", function () {
       sessionStorage.setItem("highScore",highScore);
     }
 
-    document.querySelector(".check").removeEventListener('click',(event)=>{})
+    document.querySelector(".check").removeEventListener('click',(event)=>{});
   }
   //if guess greater than secret number
   else if (guess > secretNumber) {
