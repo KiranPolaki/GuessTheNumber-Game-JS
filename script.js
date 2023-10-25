@@ -70,41 +70,35 @@ document.querySelector(".check").addEventListener("click", function () {
     document.querySelector(".check").removeEventListener('click',(event)=>{});
   }
   //if guess greater than secret number
-  else if (guess > secretNumber) {
-    if (score > 1) {
-      //svcreen meda message change chesa too high ane
-      message.textContent = "📈 Tooo High!";
-      score--;
-      //score ne update chstam html lo
-      document.querySelector(".score").textContent = score;
-      //wrong answer ke call chese red light ostade 100milliseconds
-      wrongAnswer();
-    }
-    //if score zero ke velepotey
-    else {
-      //message marustam you lost the game ane
-      message.textContent = "🤷‍♂️ You lost the game!";
-      //score html lo select chese dane zero chestam
-      document.querySelector(".score").textContent = "0";
-      //question mark place lo mana secret number ne display chestam
-      document.querySelector(".number").textContent = secretNumber;
-    }
+else if (guess > secretNumber) {
+  // Checking if the difference between the guess and the secret number is 1 or 2
+  if (guess - secretNumber <= 2 && guess - secretNumber > 0) {
+    message.textContent = "😬 It's close!";
+  } else if (score > 1) {
+    message.textContent = "📈 Tooo High!";
+    score--;
+    document.querySelector(".score").textContent = score;
+    wrongAnswer();
+  } else {
+    message.textContent = "🤷‍♂️ You lost the game!";
+    document.querySelector(".score").textContent = "0";
+    document.querySelector(".number").textContent = secretNumber;
   }
-  //if guess is less than secrenumber
-  else if (guess < secretNumber) {
-    if (score > 1) {
-      //message change chestam too low ane
-      message.textContent = "📉 Tooo Low!";
-      score--;
-      //replace score
-      document.querySelector(".score").textContent = score;
-      //wrong answer ke call chestey red light display avtade
-      wrongAnswer();
-    } else {
-      message.textContent = "🤷‍♂️ You lost the game!";
-      document.querySelector(".score").textContent = "0";
-    }
+} 
+else if (guess < secretNumber) {
+  // Checking if the difference between the secret number and the guess is 1 or 2
+  if (secretNumber - guess <= 2 && secretNumber - guess > 0) {
+    message.textContent = "😬 It's close!";
+  } else if (score > 1) {
+    message.textContent = "📉 Tooo Low!";
+    score--;
+    document.querySelector(".score").textContent = score;
+    wrongAnswer();
+  } else {
+    message.textContent = "🤷‍♂️ You lost the game!";
+    document.querySelector(".score").textContent = "0";
   }
+}
 });
 
 document.querySelector(".again").addEventListener("click", function () {
