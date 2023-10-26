@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Press Start 2P", sans-serif;
+  color: #eee;
+  background-color: #222;
+}
+
+/* LAYOUT */
+h2 {
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+
+p {
+  font-size: 1.5rem;
+  line-height: 3rem;
+  margin-left: 1.5rem;
+}
+
+/* ELEMENTS STYLE */
+.name {
+  color: #eee;
+  background-color: #222;
+  padding: 1rem;
+}
+
+.interests-field {
+  color: #eee;
+}
+
+.college {
+  color: #eee;
+}
+
+.dream {
+  color: #eee;
+}
