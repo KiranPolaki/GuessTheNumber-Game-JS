@@ -68,6 +68,7 @@ document.querySelector(".check").addEventListener("click", function () {
    
     //number ni guess chesesthe  event listener ni remove chesestham
     document.querySelector(".check").removeEventListener('click',(event)=>{});
+    location.reload();
   }
   //if guess greater than secret number
 else if (guess > secretNumber) {
