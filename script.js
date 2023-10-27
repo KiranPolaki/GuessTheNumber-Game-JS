@@ -11,14 +11,13 @@ let score = 20;
 let highScore = 0;
 
 //okavela game already adivunte highScore ni update chestam
-if(sessionStorage.getItem("highScore") != null){
+if (sessionStorage.getItem("highScore") != null) {
   highScore = sessionStorage.getItem("highScore");
   document.querySelector(".highscore").textContent = highScore;
 }
-else
-{
+else {
   //lekapothe highScore ni initialize chestam
-  sessionStorage.setItem("highScore",0);
+  sessionStorage.setItem("highScore", 0);
 }
 
 
@@ -63,68 +62,61 @@ document.querySelector(".check").addEventListener("click", function () {
       highScore = score;
       document.querySelector(".highscore").textContent = highScore;
       //save chesina highScore ni kuda update chestam
-      sessionStorage.setItem("highScore",highScore);
+      sessionStorage.setItem("highScore", highScore);
     }
-   
-    //number ni guess chesesthe  event listener ni remove chesestham
-    document.querySelector(".check").removeEventListener('click',(event)=>{});
-    location.reload();
+
   }
   //if guess greater than secret number
-else if (guess > secretNumber) {
-  // Checking if the difference between the guess and the secret number is 1 or 2
-  if (guess - secretNumber <= 2 && guess - secretNumber > 0) {
-    message.textContent = "😬 It's close!";
-  } else if (score > 1) {
-    message.textContent = "📈 Tooo High!";
-    score--;
-    document.querySelector(".score").textContent = score;
-    wrongAnswer();
-  } else {
-    message.textContent = "🤷‍♂️ You lost the game!";
-    document.querySelector(".score").textContent = "0";
-    document.querySelector(".number").textContent = secretNumber;
+  else if (guess > secretNumber) {
+    // Checking if the difference between the guess and the secret number is 1 or 2
+    if (guess - secretNumber <= 2 && guess - secretNumber > 0) {
+      message.textContent = "😬 It's close!";
+    } else if (score > 1) {
+      message.textContent = "📈 Tooo High!";
+      score--;
+      document.querySelector(".score").textContent = score;
+      wrongAnswer();
+    } else {
+      message.textContent = "🤷‍♂️ You lost the game!";
+      document.querySelector(".score").textContent = "0";
+      document.querySelector(".number").textContent = secretNumber;
+    }
   }
-} 
-else if (guess < secretNumber) {
-  // Checking if the difference between the secret number and the guess is 1 or 2
-  if (secretNumber - guess <= 2 && secretNumber - guess > 0) {
-    message.textContent = "😬 It's close!";
-  } else if (score > 1) {
-    message.textContent = "📉 Tooo Low!";
-    score--;
-    document.querySelector(".score").textContent = score;
-    wrongAnswer();
-  } else {
-    message.textContent = "🤷‍♂️ You lost the game!";
-    document.querySelector(".score").textContent = "0";
+  else if (guess < secretNumber) {
+    // Checking if the difference between the secret number and the guess is 1 or 2
+    if (secretNumber - guess <= 2 && secretNumber - guess > 0) {
+      message.textContent = "😬 It's close!";
+    } else if (score > 1) {
+      message.textContent = "📉 Tooo Low!";
+      score--;
+      document.querySelector(".score").textContent = score;
+      wrongAnswer();
+    } else {
+      message.textContent = "🤷‍♂️ You lost the game!";
+      document.querySelector(".score").textContent = "0";
+    }
   }
-}
 });
 
+
+
 document.querySelector(".again").addEventListener("click", function () {
-  //secret number lo malli random number generate chestam
-  secretNumber = Math.floor(Math.random() * 20) + 1;
   let number = document.querySelector(".number");
-  score = 20
-  //input field ne null chesam antey value remove chesam
+  score = 20;
   document.querySelector(".guess").value = null;
-  //aa box ke malli question mark petam correct answer undede
-  number.textContent = "?";
-  //width tagginchale
-  number.style.width = "15rem";
-  //score ne normal cheskovale
+  number.textContent = "?"; 
+  number.style.width = "30rem";
+  
   document.querySelector(".score").textContent = "20";
-  //background color change cheyale
   document.querySelector("body").style.backgroundColor = "#222";
-  // akada text marustam malli guess cheyandi ane
-  document.querySelector(".message").textContent = "start guessing...";
+  document.querySelector(".message").textContent = "Start guessing...";
+  document.querySelector(".check").addEventListener("click", checkGuess); // Add event listener back
 });
 
 //Added functionality to enable user to use enter key to guess the number
 const input = document.getElementById("input");
 
-input.addEventListener("keypress", function(event) {
+input.addEventListener("keypress", function (event) {
   if (event.key === "Enter") {
     event.preventDefault();
     document.getElementById("check").click();
