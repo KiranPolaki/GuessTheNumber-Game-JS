@@ -3,7 +3,9 @@ document.addEventListener("DOMContentLoaded", () => {
     "contributors-container"
   );
 
-  fetch("https://api.github.com/repos/KiranPolaki/GuessTheNumber/contributors")
+  fetch(
+    "https://api.github.com/repos/KiranPolaki/GuessTheNumber-Game-JS/contributors"
+  )
     .then((response) => response.json())
     .then((data) => {
       data.forEach((contributor) => {

@@ -11,7 +11,6 @@
 ![GitHub stars](https://img.shields.io/github/stars/KiranPolaki/GuessTheNumber?style=social)
 ![GitHub forks](https://img.shields.io/github/forks/KiranPolaki/GuessTheNumber?style=social)
 
-
 <h3>Note: This Repository is under Hacktoberfest 2023 💥🥳🙌🏼🥂</h3>
 
 <p>Guess my number is a simple web application that you can play which generates a random number you have to guess. This open-source project aims to spread positivity though games.</p>
@@ -39,8 +38,7 @@
 - **Open for Contributions:** This project is open for contributions. Feel free to add any suggested features and if you are new to contributions, I encourage you to work on the readme file or add your name in the NewContributors file (format of what to put will be provided below).
 - **Cool UI:** This project has an eye-catching UI, with some interactive components. If you have a better idea, you are open to contribute on UI features. See [How to Contibute](#🧩how-to-contribute) to this repository.
 - **Own Cdn:** For new contributors, I really appreciate you taking your time to read this and all the best in starting your journey. All you have to do is, find the newContributor.html file and add this code snippet given below. Make sure to edit it 🤣 with your name and interests.
-- 
-  ```
+- ```
   <h2 class="name">Name: {your-name}</h2>
   <p class="interests-field">Interested Field: {Web-developent/Ai/Machine-Learning/cloud-computing/salesforce}</p>
   <p class="college">College: {college-name}</p>
@@ -52,7 +50,7 @@
 
 ## 🗒️Getting Started
 
-To get started with GuessMyNumber, You can use GuessMyNumber from [Live Site](https://kiranpolaki.github.io/GuessTheNumber/) or follow these steps:
+To get started with GuessMyNumber, You can use GuessMyNumber from [Live Site](https://kiranpolaki.github.io/GuessTheNumber-Game-JS/) or follow these steps:
 
 1. **Clone the Repository:**
 
@@ -80,6 +78,6 @@ Thanks to all the contributors:
 
 <br/>
 
-<a href="https://github.com/KiranPolaki/GuessTheNumber/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=KiranPolaki/GuessTheNumber" />
+<a href="https://github.com/KiranPolaki/GuessTheNumber-Game-JS/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=KiranPolaki/GuessTheNumber-Game-JS" />
 </a>
