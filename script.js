@@ -99,6 +99,11 @@ document.querySelector(".check").addEventListener("click", function () {
 });
 
 
+document.querySelector(".again").addEventListener("click", function () {
+  // Reload the page
+  location.reload();
+});
+
 
 document.querySelector(".again").addEventListener("click", function () {
   let number = document.querySelector(".number");
