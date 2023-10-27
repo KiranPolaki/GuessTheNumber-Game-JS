@@ -45,6 +45,10 @@ main {
   font-size: 2rem;
 }
 
+.contributors{
+  margin-top: 35rem;
+}
+
 /* ELEMENTS STYLE */
 h1 {
   font-size: 4rem;
