@@ -99,6 +99,17 @@ h1 {
   margin-bottom: 3rem;
 }
 
+.range {
+  background: none;
+  border: 1px solid #eee;
+  font-family: inherit;
+  color: inherit;
+  font-size: 2rem;
+  padding: 1rem;
+  width: 10rem;
+  text-align: center;
+}
+
 .btn {
   border: none;
   background-color: #eee;
@@ -116,6 +127,12 @@ h1 {
 .message {
   margin-bottom: 8rem;
   height: 3rem;
+}
+
+.new-range{
+  margin-bottom: 8rem;
+  height: 3rem;
+  color: #be9e1d;
 }
 
 .label-score {

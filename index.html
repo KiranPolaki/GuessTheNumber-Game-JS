@@ -15,13 +15,19 @@
   <body>
     <header>
       <h1>Guess My Number!</h1>
-      <p class="between">(Between 1 and 20)</p>
-      <button class="btn again">Again!</button>
+      <p class="between">
+        (Between 1 and 
+        <span>
+          <input type="number" class="range" min="20" id="inputRange" value="20"/>
+        </span>
+        )
+      </p>
+      <button class="btn again" id="again">Again!</button>
       <div class="number">?</div>
     </header>
     <main>
       <section class="left">
-        <input type="number" class="guess" max="20" min="1" id="input" />
+        <input type="number" class="guess" max="20" min="1" id="inputGuess" />
         <button class="btn check" id="check">Check!</button>
       </section>
       <section class="right">
