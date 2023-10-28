@@ -6,7 +6,8 @@ document.querySelector(".guess").value = 30;
 console.log(document.querySelector(".guess").value);*/
 
 //random number generate chestam  by iusing Math.random and ade 20 numbers lopala unchuta
-let secretNumber = Math.floor(Math.random() * 20) + 1;
+const range = document.getElementById("inputRange");
+let secretNumber = Math.floor(Math.random() * range.valueAsNumber) + 1;
 let score = 20;
 let highScore = 0;
 
@@ -34,6 +35,7 @@ document.querySelector(".check").addEventListener("click", function () {
   const guess = Number(document.querySelector(".guess").value);
   // em em aytey change chestamo vatne store cheskuntamu
   let message = document.querySelector(".message");
+  message.classList.remove("new-range");
 
   // Added Sound Effect to button click
   let audio = new Audio("sounds/button-click.mp3");
@@ -119,7 +121,7 @@ document.querySelector(".again").addEventListener("click", function () {
 });
 
 //Added functionality to enable user to use enter key to guess the number
-const input = document.getElementById("input");
+const input = document.getElementById("inputGuess");
 
 input.addEventListener("keypress", function (event) {
   if (event.key === "Enter") {
@@ -127,3 +129,30 @@ input.addEventListener("keypress", function (event) {
     document.getElementById("check").click();
   }
 })
+
+range.addEventListener("keypress", function (event) {
+  if (event.key === "Enter") {
+    event.preventDefault();
+    
+    const newrange = event.target.value;
+
+    let message = document.querySelector(".message");
+
+    let audio = new Audio("sounds/button-click.mp3");
+    audio.play();
+
+    if(newrange < 20) {
+      message.classList.remove("new-range");
+      message.textContent = "Enter range more then 20 !";
+    } 
+    else {
+      document.getElementById("inputRange").value = newrange;
+      secretNumber = Math.floor(Math.random() * newrange) + 1;
+
+      message.textContent = "Yo.. uh set a new range 🚀";
+
+      message.classList.add("new-range");
+    }
+  }
+})
+
