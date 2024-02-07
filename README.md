@@ -11,15 +11,6 @@
 ![GitHub stars](https://img.shields.io/github/stars/KiranPolaki/GuessTheNumber?style=social)
 ![GitHub forks](https://img.shields.io/github/forks/KiranPolaki/GuessTheNumber?style=social)
 
-<h3>Note: This Repository is under Hacktoberfest 2023 💥🥳🙌🏼🥂</h3>
-
-<p>Guess my number is a simple web application that you can play which generates a random number you have to guess. This open-source project aims to spread positivity though games.</p>
-
-### 🔴 For `hactoberfest` you have to STAR The Repository⭐, Open a PULL REQUEST & Get it Merged! 🎉
-
-🗣 Hacktoberfest encourages participation in the open source community, which grows bigger every year. Complete the challenge and earn limited edition rewards!🚀
-
-📢 Register [here](https://hacktoberfest.com/) for Hacktoberfest and make four pull requests (PRs) between September 25th - October 31st to get awesome rewards! 🔥.
 
 ## Table of Contents
 
